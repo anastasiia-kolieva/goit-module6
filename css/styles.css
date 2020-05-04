@@ -24,22 +24,14 @@ a {
 }
 
 .visually-hidden {
-    /* Временное решение для неверно произносимого, размазанного текста */
     white-space: nowrap;
-    /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
     width: 1px;
     height: 1px;
-    /* Скрываем вылезающий за границы контент */
     overflow: hidden;
-    /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
     border: 0;
     padding: 0;
-    /* Вырезаем ту часть контента, которая должна отображаться. */
-    /* Устаревшее свойство clip для старых браузеров */
     clip: rect(0 0 0 0);
-    /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
     clip-path: inset(50%);
-    /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
     margin: -1px;
 }
 
@@ -72,8 +64,6 @@ a {
     color: #95e1d3;
 }
 
-/* Отступы 3 */
-
 .navigation_list {
     display: flex;
 }
@@ -91,8 +81,6 @@ a {
     text-transform: uppercase;
     position: relative;
 }
-
-/* отступы 1,5 */
 
 .navigation_list-link:hover {
     color: #f38181;
@@ -118,8 +106,6 @@ a {
     transition: opacity 200ms linear;
 }
 
-/* SERVICES */
-
 .services {
     padding-bottom: 98px;
 }
@@ -136,8 +122,6 @@ a {
     margin: 0 auto;
 }
 
-/* отступ 3 */
-
 .services-title_work {
     display: block;
     font-size: 24px;
@@ -149,8 +133,6 @@ a {
     text-transform: none;
     margin-bottom: 19px;
 }
-
-/* отступ 2,5 пикселя */
 
 .services-title::after {
     display: block;
@@ -214,8 +196,6 @@ a {
     padding-left: 83px;
 }
 
-/* Отступ 1,5 */
-
 .services-list-items-text {
     font-size: 15px;
     line-height: 24px;
@@ -224,10 +204,6 @@ a {
     font-weight: 400;
     padding-left: 83px;
 }
-
-/* Отступ 4,5 */
-
-/* TEAM */
 
 .team {
     padding-bottom: 82px;
@@ -245,8 +221,6 @@ a {
     margin: 0 auto;
 }
 
-/* отступ 3 */
-
 .team-title_we {
     display: block;
     font-size: 24px;
@@ -258,8 +232,6 @@ a {
     text-transform: none;
     margin-bottom: 19px;
 }
-
-/* отступ 2,5 пикселя */
 
 .team-title::after {
     display: block;
@@ -281,8 +253,6 @@ a {
     margin: 0 auto;
     margin-bottom: 92px;
 }
-
-/* отступы 4,5 */
 
 .team-list {
     display: flex;
@@ -310,8 +280,6 @@ a {
     margin-bottom: 14px;
 }
 
-/* отступ 1,5 */
-
 .team-list-item-position {
     font-size: 15px;
     line-height: 24px;
@@ -321,8 +289,6 @@ a {
     font-style: italic;
     text-align: center;
 }
-
-/* отступ 4.5 */
 
 .overlay {
     background-image: linear-gradient(0deg, rgba(240, 226, 144, .9) 0%, rgba(233, 137, 160, .9) 100%);
@@ -339,10 +305,10 @@ a {
     opacity: 1;
     visibility: visible;
     transform: translate(-10px, -10px);
-    box-shadow: 10px 10px 0 0 rgb(149,225,211);
+    box-shadow: 10px 10px 0 0 rgb(149, 225, 211);
 }
 
-.team-list-item:hover .team-list-image{
+.team-list-item:hover .team-list-image {
     transform: translate(-10px, -10px);
 }
 
@@ -363,26 +329,26 @@ a {
     background-color: #fce38a;
 }
 
-.button-list-link{
+.button-list-link {
     display: block;
     background-repeat: no-repeat;
     background-position: center;
     padding: 17px 15px;
 }
 
-.facebook{
+.facebook {
     background-image: url(../images/icons/facebook.png);
 }
 
-.twitter{
+.twitter {
     background-image: url(../images/icons/twitter.png);
 }
 
-.pinterest{
+.pinterest {
     background-image: url(../images/icons/pinterest.png);
 }
 
-.instagram{
+.instagram {
     background-image: url(../images/icons/instagram.png);
 }
 
@@ -390,4 +356,57 @@ a {
     background-color: #95e1d3;
 }
 
-/* footer */
+.footer {
+    padding: 10px 0 10px;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #333333;
+    font-family: var(--title-font);
+    font-weight: 400;
+}
+
+.footer-text-link {
+    color: #f38181;
+}
+
+.subscribe-form {
+ display: flex;
+}
+
+.subscribe-form__input {
+    height: 40px;
+    width: 230px;
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+}
+
+input::placeholder {
+    font-size: 15px;
+    line-height: 24px;
+    color: #cccccc;
+    font-family: var(--text-font);
+    font-weight: 300;
+    font-style: italic;
+}
+
+.subscribe-form-button {
+    border: none;
+    height: 40px;
+    width: 150px;
+    background-color: #95e1d3;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #ffffff;
+    font-family: var(--title-font);
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}

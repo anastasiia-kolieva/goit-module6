@@ -231,9 +231,9 @@ a {
 
 /* TEAM */
 
-/* .team{
-    padding-bottom: ;
-} */
+.team{
+    padding-bottom: 82px;
+}
 
 .team-title {
     width: 350px;
@@ -285,3 +285,40 @@ a {
 }
 
 /* отступы 4,5 */
+
+.team-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-list-item {
+    width: 380px;
+}
+
+.team-list-image{
+    font-size: 0;
+    margin-bottom: 30px;
+}
+
+.team-list-item-name {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #333333;
+    font-family: var(--title-font);
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+/* отступ 1,5 */
+
+.team-list-item-position{
+    font-size: 15px;
+line-height: 24px;
+color: #999999;
+font-family: var(--text-font);
+font-weight: 300;
+font-style: italic;
+text-align: center;
+}
+/* отступ 4.5 */

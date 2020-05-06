@@ -24,6 +24,8 @@ a {
 }
 
 .visually-hidden {
+    position: absolute;
+
     white-space: nowrap;
     width: 1px;
     height: 1px;
@@ -259,14 +261,14 @@ a {
     justify-content: space-between;
 }
 
-.team-list-item {
-    width: 380px;
+.overlay-block{
     position: relative;
-}
-
-.team-list-image {
     font-size: 0;
     margin-bottom: 30px;
+}
+
+.team-list-item {
+    width: 380px;
 }
 
 .team-list-item-name {
@@ -293,7 +295,7 @@ a {
 .overlay {
     background-image: linear-gradient(0deg, rgba(240, 226, 144, .9) 0%, rgba(233, 137, 160, .9) 100%);
     width: 100%;
-    height: 470px;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -322,8 +324,6 @@ a {
 
 .button-list-item {
     float: left;
-    width: 56px;
-    height: 56px;
     border-width: 1px;
     border-color: #f38181;
     background-color: #fce38a;
@@ -331,9 +331,10 @@ a {
 
 .button-list-link {
     display: block;
+    width: 56px;
+    height: 56px;
     background-repeat: no-repeat;
     background-position: center;
-    padding: 17px 15px;
 }
 
 .facebook {
@@ -377,7 +378,7 @@ a {
 }
 
 .subscribe-form {
- display: flex;
+    display: flex;
 }
 
 .subscribe-form__input {
